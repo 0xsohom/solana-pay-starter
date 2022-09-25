@@ -1,10 +1,17 @@
 import React, { useMemo } from "react";
-import { WalletAdapterEvents, WalletAdapterNetwork } from "@solana/wallet-adapter-base";
+import { WalletAdapterNetwork } from "@solana/wallet-adapter-base";
 import { WalletModalProvider } from "@solana/wallet-adapter-react-ui";
 import { ConnectionProvider, WalletProvider } from "@solana/wallet-adapter-react";
-import { GlowWalletAdapter, PhantomWalletAdapter, SlopeWalletAdapter, SolflareWalletAdapter, TorusWalletAdapter, } from "@solana/wallet-adapter-wallets";
+import {
+  GlowWalletAdapter,
+  PhantomWalletAdapter,
+  SlopeWalletAdapter,
+  SolflareWalletAdapter,
+  TorusWalletAdapter,
+} from "@solana/wallet-adapter-wallets";
 import { clusterApiUrl } from "@solana/web3.js";
-import "@solana/wallet-adapter-react/styles.css";
+
+import "@solana/wallet-adapter-react-ui/styles.css";
 import "../styles/globals.css";
 import "../styles/App.css";
 
